@@ -1,0 +1,16 @@
+PODS:
+  - HJInputText (0.1.0)
+
+DEPENDENCIES:
+  - HJInputText (from `../`)
+
+EXTERNAL SOURCES:
+  HJInputText:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HJInputText: 63986a2e6fceef090c524a4effbd4a2298a9af22
+
+PODFILE CHECKSUM: 011508f0f2e08dfcbb25daad7b09f9945849b78e
+
+COCOAPODS: 1.8.4
