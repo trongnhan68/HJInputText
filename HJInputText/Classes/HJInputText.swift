@@ -188,6 +188,31 @@ final public class HJInputText: NibView {
         setup()
     }
 
+    public func setText(_ text: String?) {
+        textfield.text = text
+    }
+    
+    public func dismissKeyboard() {
+        textfield.resignFirstResponder()
+        updateControl()
+    }
+    
+    public func focusKeyboard() {
+        textfield.becomeFirstResponder()
+        updateControl()
+    }
+    
+    public func reset() {
+        dismissKeyboard()
+        setText(nil)
+        errorMessage = nil
+        updateControl()
+    }
+    
+    public var text: String? {
+        return textfield.text
+    }
+    
     func updateProperty() {
         backgroundColor = property.backgroundColor
         titleLabel.backgroundColor = .clear
